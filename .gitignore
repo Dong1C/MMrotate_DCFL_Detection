@@ -1,0 +1,8 @@
+# All work_dirs
+work_dirs/
+
+# Data files
+data/
+
+# Checkpoints
+checkpoints/
