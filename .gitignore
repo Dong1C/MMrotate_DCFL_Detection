@@ -11,4 +11,7 @@ checkpoints/
 MMCV-DCFL/build/
 
 # jupyter notebook
-.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# the wandb file
+*/wandb/
