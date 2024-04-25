@@ -8,47 +8,6 @@ from ..builder import LOSSES
 from .utils import weight_reduce_loss
 
 
-def calibre_focal_loss(pred,
-                       target,
-                       weight=None,
-                       gamma=2.0,
-                       reduction='mean',
-                       avg_factor=None):
-    print(f"pred.size(): {pred.size()}")
-    print(f"target.unique(): {target.unique()}")
-    # get logits
-    logits_k = F.log_softmax(pred, dim=1)
-    softmax_logits = logits_k.exp()
-    num_classes = pred.size(1)
-    target_oh = F.one_hot(target, num_classes=num_classes + 1)[:, :num_classes]
-    gather = (logits_k * target_oh).sum(dim=1).view(-1)
-    
-    # gather probs of labels
-    probs_k = gather.exp()
-    mask = torch.lt(softmax_logits, probs_k.view(-1, 1)) * 1
-    probs_j = torch.topk(mask * softmax_logits, 1)[0].view(-1)
-
-    # get loss
-    loss = -1 * (1 - probs_k + probs_j) ** gamma * gather
-
-    if weight is not None:
-        if weight.shape != loss.shape:
-            if weight.size(0) == loss.size(0):
-                # For most cases, weight is of shape (num_priors, ),
-                #  which means it does not have the second axis num_class
-                weight = weight.view(-1, 1)
-            else:
-                # Sometimes, weight per anchor per class is also needed. e.g.
-                #  in FSAF. But it may be flattened of shape
-                #  (num_priors x num_class, ), while loss is still of shape
-                #  (num_priors, num_class).
-                assert weight.numel() == loss.numel()
-                weight = weight.view(loss.size(0), -1)
-        assert weight.ndim == loss.ndim
-    loss = weight_reduce_loss(loss, weight, reduction, avg_factor)
-    return loss
-    
-
 # This method is only for debugging
 def py_sigmoid_focal_loss(pred,
                           target,
@@ -198,7 +157,7 @@ def sigmoid_focal_loss(pred,
 
 
 @LOSSES.register_module()
-class DualFocalLoss(nn.Module):
+class FocalLoss(nn.Module):
 
     def __init__(self,
                  use_sigmoid=True,
@@ -271,11 +230,12 @@ class DualFocalLoss(nn.Module):
                     target = target[:, :num_classes]
                     calculate_loss_func = py_sigmoid_focal_loss
 
-            loss_cls = self.loss_weight * calibre_focal_loss(
+            loss_cls = self.loss_weight * calculate_loss_func(
                 pred,
                 target,
                 weight,
                 gamma=self.gamma,
+                alpha=self.alpha,
                 reduction=reduction,
                 avg_factor=avg_factor)
 

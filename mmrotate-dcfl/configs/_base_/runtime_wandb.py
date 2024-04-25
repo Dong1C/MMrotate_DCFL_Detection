@@ -2,7 +2,14 @@
 log_config = dict(
     interval=50,
     hooks=[
-        dict(type='TextLoggerHook')
+        dict(type='TextLoggerHook'),
+        dict(
+        type='MMDetWandbHook',
+        init_kwargs={'project': 'mmrotate-dcfl-DFL'},
+        interval=10,
+        log_checkpoint=True,
+        num_eval_images=0)
+        # dict(type='TensorboardLoggerHook')
     ])
 # yapf:enable
 
