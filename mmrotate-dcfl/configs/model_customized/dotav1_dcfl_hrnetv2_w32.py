@@ -1,7 +1,7 @@
 _base_ = [
     '../_base_/datasets/dotav1.py', 
     '../_base_/schedules/schedule_customized.py',
-    '../_base_/default_runtime.py'
+    '../_base_/runtime_wandb.py'
 ]
 
 angle_version = 'le135'
@@ -34,15 +34,13 @@ model = dict(
                 block='BASIC',
                 num_blocks=(4, 4, 4, 4),
                 num_channels=(32, 64, 128, 256))),
+        norm_eval=True,
         init_cfg=dict(
             type='Pretrained', checkpoint='open-mmlab://msra/hrnetv2_w32')),
     neck=dict(
         type='HRFPN',
         in_channels=[32, 64, 128, 256],
-        out_channels=256,
-        start_level=1,
-        add_extra_convs='on_input',
-        num_outs=5),
+        out_channels=256),
     bbox_head=dict(
         type='RDCFLHead',
         num_classes=15,
