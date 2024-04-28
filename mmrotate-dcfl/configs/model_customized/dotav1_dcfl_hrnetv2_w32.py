@@ -37,7 +37,7 @@ model = dict(
         init_cfg=dict(
             type='Pretrained', checkpoint='open-mmlab://msra/hrnetv2_w32')),
     neck=dict(
-        type='ReFPN',
+        type='HRFPN',
         in_channels=[32, 64, 128, 256],
         out_channels=256,
         start_level=1,
