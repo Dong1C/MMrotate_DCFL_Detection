@@ -5,7 +5,7 @@ log_config = dict(
         dict(type='TextLoggerHook'),
         dict(
         type='MMDetWandbHook',
-        init_kwargs={'project': 'mmrotate-dcfl-DFL'},
+        init_kwargs={'project': 'DCFL'},
         interval=10,
         log_checkpoint=True,
         num_eval_images=0)
