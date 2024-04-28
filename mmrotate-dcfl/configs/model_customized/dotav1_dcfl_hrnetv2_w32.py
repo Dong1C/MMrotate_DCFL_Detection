@@ -121,4 +121,4 @@ data = dict(
     test=dict(version=angle_version))
 optimizer = dict(type='SGD', lr=0.0025, momentum=0.9, weight_decay=0.0001)
 checkpoint_config = dict(interval=4)
-evaluation = dict(interval=1, metric='mAP')
+evaluation = dict(interval=6, metric='mAP')
