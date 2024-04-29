@@ -20,8 +20,8 @@ model = dict(
         init_cfg=dict(
             type='Pretrained', checkpoint='open-mmlab://resnext101_32x4d')),
     neck=dict(
-        type='FPN',
-        in_channels=[32, 64, 128, 256],
+        type='ReFPN',
+        in_channels=[256, 512, 1024, 2048],
         out_channels=256,
         start_level=1,
         add_extra_convs='on_input',
