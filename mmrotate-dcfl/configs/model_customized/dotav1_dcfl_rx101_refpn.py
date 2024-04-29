@@ -8,7 +8,6 @@ angle_version = 'le135'
 model = dict(
     type='RotatedRetinaNet',
     backbone=dict(
-        backbone=dict(
         type='ResNeXt',
         depth=101,
         groups=32,
@@ -19,7 +18,7 @@ model = dict(
         norm_cfg=dict(type='BN', requires_grad=True),
         style='pytorch',
         init_cfg=dict(
-            type='Pretrained', checkpoint='open-mmlab://resnext101_32x4d'))),
+            type='Pretrained', checkpoint='open-mmlab://resnext101_32x4d')),
     neck=dict(
         type='ReFPN',
         in_channels=[256, 512, 1024, 2048],
