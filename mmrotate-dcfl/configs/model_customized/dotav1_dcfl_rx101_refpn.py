@@ -20,25 +20,26 @@ model = dict(
         init_cfg=dict(
             type='Pretrained', checkpoint='open-mmlab://resnext101_32x4d')),
     neck=dict(
-        type='ReFPN',
-        in_channels=[256, 512, 1024, 2048],
+        type='FPN',
+        in_channels=[32, 64, 128, 256],
         out_channels=256,
         start_level=1,
+        add_extra_convs='on_input',
         num_outs=5),
     bbox_head=dict(
         type='RDCFLHead',
-        num_classes=20,
+        num_classes=15,
         in_channels=256,
         stacked_convs=4,
         feat_channels=256,
         assign_by_circumhbbox=None,
         dcn_assign = True,
-        dilation_rate = 3,
+        dilation_rate = 4,
         anchor_generator=dict(
             type='RotatedAnchorGenerator',
             octave_base_scale=4,
-            scales_per_octave=1, # 3
-            ratios=[1.0], # [1.0, 0.5, 2.0]
+            scales_per_octave=1, 
+            ratios=[1.0], 
             strides=[8, 16, 32, 64, 128]),
         bbox_coder=dict(
             type='DeltaXYWHAOBBoxCoder',
@@ -65,9 +66,9 @@ model = dict(
             gpu_assign_thr= 1024,
             iou_calculator=dict(type='RBboxMetrics2D'),
             assign_metric='gjsd',
-            topk=15,
-            topq=13,
-            inside_circle='dgmm',
+            topk=16,
+            topq=12,
+            constraint='dgmm',
             gauss_thr=0.6),
         allowed_border=-1,
         pos_weight=-1,
@@ -76,9 +77,8 @@ model = dict(
         nms_pre=2000,
         min_bbox_size=0,
         score_thr=0.05, 
-        nms=dict(iou_thr=0.5),
+        nms=dict(iou_thr=0.4), 
         max_per_img=2000))
-
 #fp16 = dict(loss_scale='dynamic')
 
 img_norm_cfg = dict(
