@@ -3,22 +3,23 @@ _base_ = [
     '../_base_/schedules/schedule_customized.py',
     '../_base_/runtime_wandb.py'
 ]
-
 angle_version = 'le135'
 model = dict(
     type='RotatedRetinaNet',
     backbone=dict(
         type='ResNeXt',
-        depth=101,
+        depth=50,
         groups=32,
         base_width=4,
         num_stages=4,
         out_indices=(0, 1, 2, 3),
         frozen_stages=1,
-        norm_cfg=dict(type='BN', requires_grad=True),
         style='pytorch',
+        conv_cfg=dict(type='ConvWS'),
+        norm_cfg=dict(type='GN', num_groups=32, requires_grad=True),
         init_cfg=dict(
-            type='Pretrained', checkpoint='open-mmlab://resnext101_32x4d')),
+            type='Pretrained',
+            checkpoint='open-mmlab://jhu/resnext50_32x4d_gn_ws')),
     neck=dict(
         type='ReFPN',
         in_channels=[256, 512, 1024, 2048],
