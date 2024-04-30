@@ -1,0 +1,199 @@
+2024-04-29 11:16:43,865 INFO    StreamThr :135658 [internal.py:wandb_internal():86] W&B internal server running at pid: 135658, started at: 2024-04-29 11:16:43.863356
+2024-04-29 11:16:43,868 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: status
+2024-04-29 11:16:43,873 INFO    WriterThread:135658 [datastore.py:open_for_write():87] open: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/run-kowuvmx3.wandb
+2024-04-29 11:16:43,877 DEBUG   SenderThread:135658 [sender.py:send():379] send: header
+2024-04-29 11:16:43,974 DEBUG   SenderThread:135658 [sender.py:send():379] send: run
+2024-04-29 11:16:45,263 INFO    SenderThread:135658 [dir_watcher.py:__init__():211] watching files in: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files
+2024-04-29 11:16:45,263 INFO    SenderThread:135658 [sender.py:_start_run_threads():1124] run started: kowuvmx3 with start time 1714360603.861884
+2024-04-29 11:16:45,286 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: check_version
+2024-04-29 11:16:45,287 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: check_version
+2024-04-29 11:16:45,736 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: run_start
+2024-04-29 11:16:45,759 DEBUG   HandlerThread:135658 [system_info.py:__init__():26] System info init
+2024-04-29 11:16:45,759 DEBUG   HandlerThread:135658 [system_info.py:__init__():41] System info init done
+2024-04-29 11:16:45,759 INFO    HandlerThread:135658 [system_monitor.py:start():194] Starting system monitor
+2024-04-29 11:16:45,760 INFO    SystemMonitor:135658 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-29 11:16:45,761 INFO    HandlerThread:135658 [system_monitor.py:probe():214] Collecting system info
+2024-04-29 11:16:45,762 INFO    SystemMonitor:135658 [interfaces.py:start():190] Started cpu monitoring
+2024-04-29 11:16:45,764 INFO    SystemMonitor:135658 [interfaces.py:start():190] Started disk monitoring
+2024-04-29 11:16:45,765 INFO    SystemMonitor:135658 [interfaces.py:start():190] Started gpu monitoring
+2024-04-29 11:16:45,767 INFO    SystemMonitor:135658 [interfaces.py:start():190] Started memory monitoring
+2024-04-29 11:16:45,770 INFO    SystemMonitor:135658 [interfaces.py:start():190] Started network monitoring
+2024-04-29 11:16:45,820 DEBUG   HandlerThread:135658 [system_info.py:probe():150] Probing system
+2024-04-29 11:16:45,832 DEBUG   HandlerThread:135658 [system_info.py:_probe_git():135] Probing git
+2024-04-29 11:16:45,859 DEBUG   HandlerThread:135658 [system_info.py:_probe_git():143] Probing git done
+2024-04-29 11:16:45,860 DEBUG   HandlerThread:135658 [system_info.py:probe():198] Probing system done
+2024-04-29 11:16:45,860 DEBUG   HandlerThread:135658 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-1160.49.1.el7.x86_64-x86_64-with-glibc2.17', 'python': '3.8.19', 'heartbeatAt': '2024-04-29T03:16:45.820958', 'startedAt': '2024-04-29T03:16:43.848023', 'docker': None, 'cuda': None, 'args': ('configs/model_customized/dotav1_dcfl_rx101_refpn.py',), 'state': 'running', 'program': 'tools/train.py', 'codePathLocal': 'tools/train.py', 'codePath': 'mmrotate-dcfl/tools/train.py', 'git': {'remote': 'git@github.com:Dong1C/MMrotate_DCFL_Detection.git', 'commit': '5677fb29e1d4cebed78e1612e507768c731ccb98'}, 'email': '383886367@qq.com', 'root': '/root/Desktop/work/MMLAB', 'host': '96db8cd45d43', 'username': 'root', 'executable': '/root/miniconda3/envs/openmmlab/bin/python', 'cpu_count': 28, 'cpu_count_logical': 56, 'cpu_freq': {'current': 1009.6500892857148, 'min': 1000.0, 'max': 3200.0}, 'cpu_freq_per_core': [{'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.097, 'min': 1000.0, 'max': 3200.0}, {'current': 1003.723, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.097, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.097, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1097.583, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1055.419, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1039.306, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1001.171, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.5, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.366, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.097, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.231, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1027.087, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1005.603, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.634, 'min': 1000.0, 'max': 3200.0}, {'current': 1293.627, 'min': 1000.0, 'max': 3200.0}, {'current': 1003.991, 'min': 1000.0, 'max': 3200.0}, {'current': 1001.44, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.5, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.769, 'min': 1000.0, 'max': 3200.0}, {'current': 1001.44, 'min': 1000.0, 'max': 3200.0}, {'current': 1001.44, 'min': 1000.0, 'max': 3200.0}, {'current': 1001.574, 'min': 1000.0, 'max': 3200.0}, {'current': 1001.843, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1001.843, 'min': 1000.0, 'max': 3200.0}, {'current': 1001.843, 'min': 1000.0, 'max': 3200.0}], 'disk': {'/': {'total': 5026.564453125, 'used': 4381.99520111084}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 503.1111068725586}}
+2024-04-29 11:16:45,860 INFO    HandlerThread:135658 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-29 11:16:45,860 INFO    HandlerThread:135658 [system_monitor.py:probe():227] Publishing system info
+2024-04-29 11:16:45,860 DEBUG   HandlerThread:135658 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-04-29 11:16:46,269 INFO    Thread-12 :135658 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/conda-environment.yaml
+2024-04-29 11:16:47,690 DEBUG   HandlerThread:135658 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-29 11:16:47,693 INFO    HandlerThread:135658 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-29 11:16:47,701 DEBUG   SenderThread:135658 [sender.py:send():379] send: files
+2024-04-29 11:16:47,702 INFO    SenderThread:135658 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-29 11:16:47,820 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-29 11:16:47,821 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: python_packages
+2024-04-29 11:16:47,823 DEBUG   SenderThread:135658 [sender.py:send():379] send: telemetry
+2024-04-29 11:16:47,825 DEBUG   SenderThread:135658 [sender.py:send():379] send: telemetry
+2024-04-29 11:16:47,825 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 11:16:47,826 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 11:16:47,833 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 11:16:48,266 INFO    Thread-12 :135658 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/conda-environment.yaml
+2024-04-29 11:16:48,267 INFO    Thread-12 :135658 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/wandb-metadata.json
+2024-04-29 11:16:48,267 INFO    Thread-12 :135658 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/requirements.txt
+2024-04-29 11:16:48,267 INFO    Thread-12 :135658 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/dotav1_dcfl_rx101_refpn.py
+2024-04-29 11:16:48,828 DEBUG   SenderThread:135658 [sender.py:send():379] send: files
+2024-04-29 11:16:48,828 INFO    SenderThread:135658 [sender.py:_save_file():1390] saving file dotav1_dcfl_rx101_refpn.py with policy live
+2024-04-29 11:16:48,829 DEBUG   SenderThread:135658 [sender.py:send():379] send: config
+2024-04-29 11:16:49,158 INFO    wandb-upload_0:135658 [upload_job.py:push():131] Uploaded file /tmp/tmp9a36ujpawandb/2gk9waqt-wandb-metadata.json
+2024-04-29 11:16:49,831 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 11:16:50,086 INFO    wandb-upload_1:135658 [upload_job.py:push():131] Uploaded file /tmp/tmp9a36ujpawandb/ru6bdn84-dotav1_dcfl_rx101_refpn.py
+2024-04-29 11:16:53,275 INFO    Thread-12 :135658 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/output.log
+2024-04-29 11:16:53,277 DEBUG   SenderThread:135658 [sender.py:send():379] send: exit
+2024-04-29 11:16:53,277 INFO    SenderThread:135658 [sender.py:send_exit():586] handling exit code: 1
+2024-04-29 11:16:53,278 INFO    SenderThread:135658 [sender.py:send_exit():588] handling runtime: 7
+2024-04-29 11:16:53,283 INFO    SenderThread:135658 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 11:16:53,284 INFO    SenderThread:135658 [sender.py:send_exit():594] send defer
+2024-04-29 11:16:53,284 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:53,284 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-29 11:16:53,285 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:53,285 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-29 11:16:53,285 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 1
+2024-04-29 11:16:53,286 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:53,286 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-29 11:16:53,287 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:53,287 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-29 11:16:53,287 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 2
+2024-04-29 11:16:53,288 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:53,288 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-29 11:16:53,288 INFO    HandlerThread:135658 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-29 11:16:53,289 DEBUG   SystemMonitor:135658 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-29 11:16:53,290 INFO    HandlerThread:135658 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-29 11:16:53,291 DEBUG   SystemMonitor:135658 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-29 11:16:53,291 INFO    HandlerThread:135658 [interfaces.py:finish():202] Joined disk monitor
+2024-04-29 11:16:53,292 DEBUG   SystemMonitor:135658 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-29 11:16:53,332 INFO    HandlerThread:135658 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-29 11:16:53,333 INFO    HandlerThread:135658 [interfaces.py:finish():202] Joined memory monitor
+2024-04-29 11:16:53,333 INFO    HandlerThread:135658 [interfaces.py:finish():202] Joined network monitor
+2024-04-29 11:16:53,334 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:53,335 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-29 11:16:53,335 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 3
+2024-04-29 11:16:53,335 DEBUG   SenderThread:135658 [sender.py:send():379] send: stats
+2024-04-29 11:16:53,336 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:53,337 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-29 11:16:53,337 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:53,337 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-29 11:16:53,338 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 4
+2024-04-29 11:16:53,338 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:53,338 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-29 11:16:53,338 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:53,339 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-29 11:16:53,339 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 5
+2024-04-29 11:16:53,339 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:53,339 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-29 11:16:53,340 DEBUG   SenderThread:135658 [sender.py:send():379] send: summary
+2024-04-29 11:16:53,340 INFO    SenderThread:135658 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 11:16:53,341 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:53,341 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-29 11:16:53,341 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 6
+2024-04-29 11:16:53,342 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:53,342 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-29 11:16:53,342 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:53,342 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-29 11:16:53,348 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 11:16:53,773 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 7
+2024-04-29 11:16:53,777 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:53,777 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-29 11:16:53,778 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:53,778 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-29 11:16:54,276 INFO    Thread-12 :135658 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/config.yaml
+2024-04-29 11:16:54,277 INFO    Thread-12 :135658 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/wandb-summary.json
+2024-04-29 11:16:54,279 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 11:16:55,250 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 8
+2024-04-29 11:16:55,251 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 11:16:55,251 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:55,252 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-29 11:16:55,252 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:55,252 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-29 11:16:55,253 INFO    SenderThread:135658 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-29 11:16:55,255 INFO    SenderThread:135658 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-04-29 11:16:55,278 INFO    Thread-12 :135658 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/output.log
+2024-04-29 11:16:55,282 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 11:16:55,315 INFO    SenderThread:135658 [job_builder.py:build():431] adding wandb-job metadata file
+2024-04-29 11:16:55,392 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 9
+2024-04-29 11:16:55,394 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 11:16:55,394 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:55,394 DEBUG   SenderThread:135658 [sender.py:send():379] send: artifact
+2024-04-29 11:16:55,395 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-29 11:16:56,285 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 11:16:57,113 INFO    SenderThread:135658 [sender.py:send_artifact():1468] sent artifact job-git_github.com_Dong1C_MMrotate_DCFL_Detection.git_mmrotate-dcfl_tools_train.py - {'id': 'QXJ0aWZhY3Q6ODE0NDI2MDQ1', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NzczMzk1Mg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODE0NDI2MDQ1', 'versionIndex': 5}}}
+2024-04-29 11:16:57,114 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:57,114 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-29 11:16:57,114 INFO    SenderThread:135658 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-29 11:16:57,281 INFO    SenderThread:135658 [dir_watcher.py:finish():388] scan: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files
+2024-04-29 11:16:57,282 INFO    SenderThread:135658 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/config.yaml config.yaml
+2024-04-29 11:16:57,282 INFO    SenderThread:135658 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/conda-environment.yaml conda-environment.yaml
+2024-04-29 11:16:57,283 INFO    SenderThread:135658 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/wandb-metadata.json wandb-metadata.json
+2024-04-29 11:16:57,283 INFO    SenderThread:135658 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/requirements.txt requirements.txt
+2024-04-29 11:16:57,298 INFO    SenderThread:135658 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/dotav1_dcfl_rx101_refpn.py dotav1_dcfl_rx101_refpn.py
+2024-04-29 11:16:57,301 INFO    SenderThread:135658 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/output.log output.log
+2024-04-29 11:16:57,307 INFO    SenderThread:135658 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/wandb-summary.json wandb-summary.json
+2024-04-29 11:16:57,310 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 10
+2024-04-29 11:16:57,311 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 11:16:57,312 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:57,325 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-29 11:16:57,327 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:57,327 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-29 11:16:57,328 INFO    SenderThread:135658 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-29 11:16:58,106 INFO    wandb-upload_1:135658 [upload_job.py:push():131] Uploaded file /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/conda-environment.yaml
+2024-04-29 11:16:58,110 INFO    wandb-upload_0:135658 [upload_job.py:push():131] Uploaded file /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/config.yaml
+2024-04-29 11:16:58,293 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 11:16:58,295 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 11:16:58,736 INFO    wandb-upload_3:135658 [upload_job.py:push():131] Uploaded file /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/output.log
+2024-04-29 11:16:58,795 INFO    wandb-upload_4:135658 [upload_job.py:push():131] Uploaded file /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/wandb-summary.json
+2024-04-29 11:16:59,286 INFO    wandb-upload_2:135658 [upload_job.py:push():131] Uploaded file /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/files/requirements.txt
+2024-04-29 11:16:59,298 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 11:16:59,299 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 11:16:59,487 INFO    Thread-11 :135658 [sender.py:transition_state():614] send defer: 11
+2024-04-29 11:16:59,488 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:59,488 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-29 11:16:59,489 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:59,489 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-29 11:16:59,489 INFO    SenderThread:135658 [file_pusher.py:join():178] waiting for file pusher
+2024-04-29 11:16:59,490 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 12
+2024-04-29 11:16:59,490 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:59,491 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-29 11:16:59,491 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:59,491 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-29 11:16:59,492 INFO    SenderThread:135658 [file_stream.py:finish():614] file stream finish called
+2024-04-29 11:16:59,840 INFO    SenderThread:135658 [file_stream.py:finish():618] file stream finish is done
+2024-04-29 11:16:59,840 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 13
+2024-04-29 11:16:59,841 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:59,841 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-29 11:16:59,842 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:59,842 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-29 11:16:59,842 INFO    SenderThread:135658 [sender.py:transition_state():614] send defer: 14
+2024-04-29 11:16:59,843 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 11:16:59,843 INFO    HandlerThread:135658 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-29 11:16:59,844 DEBUG   SenderThread:135658 [sender.py:send():379] send: final
+2024-04-29 11:16:59,844 DEBUG   SenderThread:135658 [sender.py:send():379] send: footer
+2024-04-29 11:16:59,845 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: defer
+2024-04-29 11:16:59,845 INFO    SenderThread:135658 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-29 11:16:59,846 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 11:16:59,847 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 11:16:59,848 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 11:16:59,849 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 11:16:59,850 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: server_info
+2024-04-29 11:16:59,851 DEBUG   SenderThread:135658 [sender.py:send_request():406] send_request: server_info
+2024-04-29 11:16:59,859 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-29 11:16:59,860 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-29 11:16:59,861 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 11:17:00,214 INFO    MainThread:135658 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-29 11:17:00,214 INFO    MainThread:135658 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-29 11:17:00,214 INFO    MainThread:135658 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-04-29 11:17:00,215 DEBUG   HandlerThread:135658 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-29 11:17:00,216 INFO    HandlerThread:135658 [handler.py:finish():866] shutting down handler
+2024-04-29 11:17:00,851 INFO    WriterThread:135658 [datastore.py:close():296] close: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240429_111643-kowuvmx3/run-kowuvmx3.wandb
+2024-04-29 11:17:01,213 INFO    SenderThread:135658 [sender.py:finish():1546] shutting down sender
+2024-04-29 11:17:01,214 INFO    SenderThread:135658 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-29 11:17:01,214 INFO    SenderThread:135658 [file_pusher.py:join():178] waiting for file pusher

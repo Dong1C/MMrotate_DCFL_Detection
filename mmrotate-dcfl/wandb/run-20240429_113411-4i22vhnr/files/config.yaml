@@ -1,0 +1,413 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.19
+    cli_version: 0.16.6
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1714361651.0
+    t:
+      1:
+      - 1
+      - 37
+      - 38
+      - 41
+      - 55
+      2:
+      - 1
+      - 37
+      - 38
+      - 41
+      - 55
+      3:
+      - 3
+      - 23
+      4: 3.8.19
+      5: 0.16.6
+      8:
+      - 5
+      13: linux-x86_64
+angle_version:
+  desc: null
+  value: le135
+auto_resume:
+  desc: null
+  value: false
+checkpoint_config:
+  desc: null
+  value:
+    interval: 4
+data:
+  desc: null
+  value:
+    samples_per_gpu: 4
+    workers_per_gpu: 2
+    train:
+      type: DOTADataset
+      ann_file: data/split_ss_dota/trainval/annfiles/
+      img_prefix: data/split_ss_dota/trainval/images/
+      pipeline:
+      - type: LoadImageFromFile
+      - type: LoadAnnotations
+        with_bbox: true
+      - type: RResize
+        img_scale:
+        - 800
+        - 800
+      - type: RRandomFlip
+        flip_ratio:
+        - 0.25
+        - 0.25
+        - 0.25
+        direction:
+        - horizontal
+        - vertical
+        - diagonal
+        version: le135
+      - type: Normalize
+        mean:
+        - 123.675
+        - 116.28
+        - 103.53
+        std:
+        - 58.395
+        - 57.12
+        - 57.375
+        to_rgb: true
+      - type: Pad
+        size_divisor: 32
+      - type: DefaultFormatBundle
+      - type: Collect
+        keys:
+        - img
+        - gt_bboxes
+        - gt_labels
+      version: le135
+    val:
+      type: DOTADataset
+      ann_file: data/split_ss_dota/trainval/annfiles/
+      img_prefix: data/split_ss_dota/trainval/images/
+      pipeline:
+      - type: LoadImageFromFile
+      - type: MultiScaleFlipAug
+        img_scale:
+        - 1024
+        - 1024
+        flip: false
+        transforms:
+        - type: RResize
+        - type: Normalize
+          mean:
+          - 123.675
+          - 116.28
+          - 103.53
+          std:
+          - 58.395
+          - 57.12
+          - 57.375
+          to_rgb: true
+        - type: Pad
+          size_divisor: 32
+        - type: DefaultFormatBundle
+        - type: Collect
+          keys:
+          - img
+      version: le135
+    test:
+      type: DOTADataset
+      ann_file: data/split_ss_dota/test/images/
+      img_prefix: data/split_ss_dota/test/images/
+      pipeline:
+      - type: LoadImageFromFile
+      - type: MultiScaleFlipAug
+        img_scale:
+        - 1024
+        - 1024
+        flip: false
+        transforms:
+        - type: RResize
+        - type: Normalize
+          mean:
+          - 123.675
+          - 116.28
+          - 103.53
+          std:
+          - 58.395
+          - 57.12
+          - 57.375
+          to_rgb: true
+        - type: Pad
+          size_divisor: 32
+        - type: DefaultFormatBundle
+        - type: Collect
+          keys:
+          - img
+      version: le135
+data_root:
+  desc: null
+  value: data/split_ss_dota/
+dataset_type:
+  desc: null
+  value: DOTADataset
+dist_params:
+  desc: null
+  value:
+    backend: nccl
+evaluation:
+  desc: null
+  value:
+    interval: 4
+    metric: mAP
+gpu_ids:
+  desc: null
+  value:
+  - 0
+img_norm_cfg:
+  desc: null
+  value:
+    mean:
+    - 123.675
+    - 116.28
+    - 103.53
+    std:
+    - 58.395
+    - 57.12
+    - 57.375
+    to_rgb: true
+load_from:
+  desc: null
+  value: null
+log_config:
+  desc: null
+  value:
+    interval: 50
+    hooks:
+    - type: TextLoggerHook
+    - type: MMDetWandbHook
+      init_kwargs:
+        project: DCFL
+      interval: 10
+      log_checkpoint: true
+      num_eval_images: 0
+log_level:
+  desc: null
+  value: INFO
+lr_config:
+  desc: null
+  value:
+    policy: step
+    warmup: linear
+    warmup_iters: 500
+    warmup_ratio: 0.3333333333333333
+    step:
+    - 24
+    - 33
+model:
+  desc: null
+  value:
+    type: RotatedRetinaNet
+    backbone:
+      type: ResNeXt
+      depth: 50
+      groups: 32
+      base_width: 4
+      num_stages: 4
+      out_indices:
+      - 0
+      - 1
+      - 2
+      - 3
+      frozen_stages: 1
+      style: pytorch
+      conv_cfg:
+        type: ConvWS
+      norm_cfg:
+        type: GN
+        num_groups: 32
+        requires_grad: true
+      init_cfg:
+        type: Pretrained
+        checkpoint: open-mmlab://jhu/resnext50_32x4d_gn_ws
+    neck:
+      type: ReFPN
+      in_channels:
+      - 256
+      - 512
+      - 1024
+      - 2048
+      out_channels: 256
+      num_outs: 5
+    bbox_head:
+      type: RDCFLHead
+      num_classes: 15
+      in_channels: 256
+      stacked_convs: 4
+      feat_channels: 256
+      assign_by_circumhbbox: null
+      dcn_assign: true
+      dilation_rate: 4
+      anchor_generator:
+        type: RotatedAnchorGenerator
+        octave_base_scale: 4
+        scales_per_octave: 1
+        ratios:
+        - 1.0
+        strides:
+        - 8
+        - 16
+        - 32
+        - 64
+        - 128
+      bbox_coder:
+        type: DeltaXYWHAOBBoxCoder
+        angle_range: le135
+        norm_factor: 1
+        edge_swap: false
+        proj_xy: true
+        target_means:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        target_stds:
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+      loss_cls:
+        type: FocalLoss
+        use_sigmoid: true
+        gamma: 2.0
+        alpha: 0.25
+        loss_weight: 1.0
+      reg_decoded_bbox: true
+      loss_bbox:
+        type: RotatedIoULoss
+        loss_weight: 1.0
+    train_cfg:
+      assigner:
+        type: C2FAssigner
+        ignore_iof_thr: -1
+        gpu_assign_thr: 1024
+        iou_calculator:
+          type: RBboxMetrics2D
+        assign_metric: gjsd
+        topk: 16
+        topq: 12
+        constraint: dgmm
+        gauss_thr: 0.6
+      allowed_border: -1
+      pos_weight: -1
+      debug: false
+    test_cfg:
+      nms_pre: 2000
+      min_bbox_size: 0
+      score_thr: 0.05
+      nms:
+        iou_thr: 0.4
+      max_per_img: 2000
+mp_start_method:
+  desc: null
+  value: fork
+opencv_num_threads:
+  desc: null
+  value: 0
+optimizer:
+  desc: null
+  value:
+    type: SGD
+    lr: 0.005
+    momentum: 0.9
+    weight_decay: 0.0001
+optimizer_config:
+  desc: null
+  value:
+    grad_clip:
+      max_norm: 35
+      norm_type: 2
+resume_from:
+  desc: null
+  value: null
+runner:
+  desc: null
+  value:
+    type: EpochBasedRunner
+    max_epochs: 12
+test_pipeline:
+  desc: null
+  value:
+  - type: LoadImageFromFile
+  - type: MultiScaleFlipAug
+    img_scale:
+    - 1024
+    - 1024
+    flip: false
+    transforms:
+    - type: RResize
+    - type: Normalize
+      mean:
+      - 123.675
+      - 116.28
+      - 103.53
+      std:
+      - 58.395
+      - 57.12
+      - 57.375
+      to_rgb: true
+    - type: Pad
+      size_divisor: 32
+    - type: DefaultFormatBundle
+    - type: Collect
+      keys:
+      - img
+train_pipeline:
+  desc: null
+  value:
+  - type: LoadImageFromFile
+  - type: LoadAnnotations
+    with_bbox: true
+  - type: RResize
+    img_scale:
+    - 800
+    - 800
+  - type: RRandomFlip
+    flip_ratio:
+    - 0.25
+    - 0.25
+    - 0.25
+    direction:
+    - horizontal
+    - vertical
+    - diagonal
+    version: le135
+  - type: Normalize
+    mean:
+    - 123.675
+    - 116.28
+    - 103.53
+    std:
+    - 58.395
+    - 57.12
+    - 57.375
+    to_rgb: true
+  - type: Pad
+    size_divisor: 32
+  - type: DefaultFormatBundle
+  - type: Collect
+    keys:
+    - img
+    - gt_bboxes
+    - gt_labels
+work_dir:
+  desc: null
+  value: ./work_dirs/dotav1_dcfl_rx50
+workflow:
+  desc: null
+  value:
+  - - train
+    - 1

@@ -1,0 +1,940 @@
+2024-04-25 20:01:10,161 INFO    StreamThr :27797 [internal.py:wandb_internal():86] W&B internal server running at pid: 27797, started at: 2024-04-25 20:01:10.159651
+2024-04-25 20:01:10,164 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status
+2024-04-25 20:01:10,167 INFO    WriterThread:27797 [datastore.py:open_for_write():87] open: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/run-w9cqda26.wandb
+2024-04-25 20:01:10,173 DEBUG   SenderThread:27797 [sender.py:send():379] send: header
+2024-04-25 20:01:10,274 DEBUG   SenderThread:27797 [sender.py:send():379] send: run
+2024-04-25 20:01:12,515 INFO    SenderThread:27797 [dir_watcher.py:__init__():211] watching files in: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files
+2024-04-25 20:01:12,515 INFO    SenderThread:27797 [sender.py:_start_run_threads():1124] run started: w9cqda26 with start time 1714046470.158663
+2024-04-25 20:01:12,539 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: check_version
+2024-04-25 20:01:12,540 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: check_version
+2024-04-25 20:01:13,080 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: run_start
+2024-04-25 20:01:13,103 DEBUG   HandlerThread:27797 [system_info.py:__init__():26] System info init
+2024-04-25 20:01:13,103 DEBUG   HandlerThread:27797 [system_info.py:__init__():41] System info init done
+2024-04-25 20:01:13,103 INFO    HandlerThread:27797 [system_monitor.py:start():194] Starting system monitor
+2024-04-25 20:01:13,104 INFO    SystemMonitor:27797 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-25 20:01:13,106 INFO    HandlerThread:27797 [system_monitor.py:probe():214] Collecting system info
+2024-04-25 20:01:13,107 INFO    SystemMonitor:27797 [interfaces.py:start():190] Started cpu monitoring
+2024-04-25 20:01:13,108 INFO    SystemMonitor:27797 [interfaces.py:start():190] Started disk monitoring
+2024-04-25 20:01:13,110 INFO    SystemMonitor:27797 [interfaces.py:start():190] Started gpu monitoring
+2024-04-25 20:01:13,112 INFO    SystemMonitor:27797 [interfaces.py:start():190] Started memory monitoring
+2024-04-25 20:01:13,113 INFO    SystemMonitor:27797 [interfaces.py:start():190] Started network monitoring
+2024-04-25 20:01:13,166 DEBUG   HandlerThread:27797 [system_info.py:probe():150] Probing system
+2024-04-25 20:01:13,178 DEBUG   HandlerThread:27797 [system_info.py:_probe_git():135] Probing git
+2024-04-25 20:01:13,205 DEBUG   HandlerThread:27797 [system_info.py:_probe_git():143] Probing git done
+2024-04-25 20:01:13,205 DEBUG   HandlerThread:27797 [system_info.py:probe():198] Probing system done
+2024-04-25 20:01:13,205 DEBUG   HandlerThread:27797 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-1160.49.1.el7.x86_64-x86_64-with-glibc2.17', 'python': '3.8.19', 'heartbeatAt': '2024-04-25T12:01:13.166869', 'startedAt': '2024-04-25T12:01:10.143967', 'docker': None, 'cuda': None, 'args': ('configs/model_customized/dotav1_dcfl_r50_dfl.py',), 'state': 'running', 'program': 'tools/train.py', 'codePathLocal': 'tools/train.py', 'codePath': 'mmrotate-dcfl/tools/train.py', 'git': {'remote': 'git@github.com:Dong1C/MMrotate_DCFL_Detection.git', 'commit': '0fcc4e812f629c51e344dfa59ba103ac6d024ea8'}, 'email': '383886367@qq.com', 'root': '/root/Desktop/work/MMLAB', 'host': '96db8cd45d43', 'username': 'root', 'executable': '/root/miniconda3/envs/openmmlab/bin/python', 'cpu_count': 28, 'cpu_count_logical': 56, 'cpu_freq': {'current': 1043.8093035714294, 'min': 1000.0, 'max': 3200.0}, 'cpu_freq_per_core': [{'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.903, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.097, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.231, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1032.592, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.5, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 2220.275, 'min': 1000.0, 'max': 3200.0}, {'current': 999.829, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.5, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1301.416, 'min': 1000.0, 'max': 3200.0}, {'current': 1012.451, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.097, 'min': 1000.0, 'max': 3200.0}, {'current': 1151.428, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.097, 'min': 1000.0, 'max': 3200.0}, {'current': 1180.163, 'min': 1000.0, 'max': 3200.0}, {'current': 1008.557, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.769, 'min': 1000.0, 'max': 3200.0}, {'current': 1015.673, 'min': 1000.0, 'max': 3200.0}, {'current': 1004.394, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.097, 'min': 1000.0, 'max': 3200.0}, {'current': 1099.328, 'min': 1000.0, 'max': 3200.0}, {'current': 1015.002, 'min': 1000.0, 'max': 3200.0}, {'current': 1001.44, 'min': 1000.0, 'max': 3200.0}, {'current': 1029.101, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.366, 'min': 1000.0, 'max': 3200.0}, {'current': 1035.681, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1015.808, 'min': 1000.0, 'max': 3200.0}, {'current': 1019.165, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1000.769, 'min': 1000.0, 'max': 3200.0}, {'current': 999.963, 'min': 1000.0, 'max': 3200.0}, {'current': 1056.359, 'min': 1000.0, 'max': 3200.0}, {'current': 1020.91, 'min': 1000.0, 'max': 3200.0}], 'disk': {'/': {'total': 5026.564453125, 'used': 4360.266124725342}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 503.1111068725586}}
+2024-04-25 20:01:13,205 INFO    HandlerThread:27797 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-25 20:01:13,205 INFO    HandlerThread:27797 [system_monitor.py:probe():227] Publishing system info
+2024-04-25 20:01:13,206 DEBUG   HandlerThread:27797 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-04-25 20:01:13,522 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/conda-environment.yaml
+2024-04-25 20:01:15,037 DEBUG   HandlerThread:27797 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-25 20:01:15,040 INFO    HandlerThread:27797 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-25 20:01:15,048 DEBUG   SenderThread:27797 [sender.py:send():379] send: files
+2024-04-25 20:01:15,048 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-25 20:01:15,166 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-25 20:01:15,167 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: python_packages
+2024-04-25 20:01:15,170 DEBUG   SenderThread:27797 [sender.py:send():379] send: telemetry
+2024-04-25 20:01:15,171 DEBUG   SenderThread:27797 [sender.py:send():379] send: telemetry
+2024-04-25 20:01:15,174 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:01:15,175 DEBUG   SenderThread:27797 [sender.py:send():379] send: files
+2024-04-25 20:01:15,175 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:01:15,176 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file dotav1_dcfl_r50_dfl.py with policy live
+2024-04-25 20:01:15,176 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:01:15,178 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:01:15,519 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/conda-environment.yaml
+2024-04-25 20:01:15,520 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/dotav1_dcfl_r50_dfl.py
+2024-04-25 20:01:15,521 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-metadata.json
+2024-04-25 20:01:15,521 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/requirements.txt
+2024-04-25 20:01:16,584 INFO    wandb-upload_0:27797 [upload_job.py:push():131] Uploaded file /tmp/tmptfcjhe85wandb/6wgdjep5-wandb-metadata.json
+2024-04-25 20:01:16,622 DEBUG   SenderThread:27797 [sender.py:send():379] send: config
+2024-04-25 20:01:17,454 INFO    wandb-upload_1:27797 [upload_job.py:push():131] Uploaded file /tmp/tmptfcjhe85wandb/ne8z41cu-dotav1_dcfl_r50_dfl.py
+2024-04-25 20:01:20,624 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:01:25,625 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:01:25,863 DEBUG   SenderThread:27797 [sender.py:send():379] send: telemetry
+2024-04-25 20:01:25,863 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:01:25,867 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:01:25,867 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:01:25,871 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:01:26,530 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:01:30,174 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:01:30,174 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:01:30,176 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:01:31,150 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:01:31,151 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:01:31,152 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:01:31,155 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:01:31,159 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:01:31,537 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:01:35,783 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:01:35,785 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:01:35,785 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:01:35,786 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:01:36,544 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:01:36,787 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:01:40,149 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:01:40,151 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:01:40,151 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:01:40,156 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:01:40,549 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:01:42,163 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:01:43,554 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/config.yaml
+2024-04-25 20:01:44,363 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:01:44,366 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:01:44,366 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:01:44,367 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:01:44,555 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:01:44,556 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:01:45,169 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:01:45,170 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:01:45,175 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:01:46,558 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:01:48,549 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:01:49,623 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:01:49,625 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:01:49,625 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:01:49,626 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:01:50,562 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:01:53,631 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:01:54,243 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:01:54,245 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:01:54,245 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:01:54,250 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:01:54,567 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:01:59,014 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:01:59,016 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:01:59,016 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:01:59,021 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:01:59,022 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:01:59,573 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:00,169 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:02:00,170 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:02:00,177 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:02:03,472 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:03,474 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:03,474 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:03,479 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:03,578 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:04,480 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:02:07,650 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:07,652 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:07,653 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:07,654 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:08,583 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:08,584 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:02:09,655 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:02:11,923 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:11,925 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:11,926 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:11,927 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:12,589 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:13,115 DEBUG   SystemMonitor:27797 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-25 20:02:13,119 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:02:15,121 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:02:15,169 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:02:15,170 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:02:15,176 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:02:16,141 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:16,143 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:16,143 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:16,144 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:16,594 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:20,146 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:02:20,645 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:20,647 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:20,648 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:20,653 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:21,599 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:25,655 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:02:25,998 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:26,000 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:26,000 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:26,001 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:26,602 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:30,171 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:02:30,172 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:02:30,177 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:02:30,686 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:02:30,724 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:30,726 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:30,727 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:30,732 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:31,606 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:32,607 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:02:35,566 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:35,568 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:35,569 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:35,570 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:35,609 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:36,571 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:02:39,743 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:39,745 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:39,746 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:39,747 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:40,612 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:41,748 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:02:43,122 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:02:44,525 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:44,527 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:44,528 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:44,529 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:44,614 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:45,170 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:02:45,171 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:02:45,178 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:02:47,567 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:02:49,020 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:49,022 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:49,023 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:49,023 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:49,617 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:53,026 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:02:53,309 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:53,310 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:53,311 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:53,316 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:53,621 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:54,621 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:02:57,439 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:02:57,441 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:02:57,441 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:02:57,442 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:02:57,623 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:02:58,443 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:03:00,171 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:03:00,172 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:03:00,179 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:03:01,863 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:01,865 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:01,866 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:01,867 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:02,627 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:03,868 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:03:05,978 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:05,980 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:05,980 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:05,986 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:06,630 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:08,988 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:03:11,316 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:11,318 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:11,319 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:11,320 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:11,634 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:13,125 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:03:14,127 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:03:15,173 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:03:15,174 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:03:15,181 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:03:15,599 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:15,606 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:15,607 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:15,608 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:15,637 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:16,638 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:03:19,610 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:03:20,022 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:20,024 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:20,024 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:20,025 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:20,641 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:24,882 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:24,884 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:24,885 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:24,885 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:03:24,886 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:25,644 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:29,203 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:29,205 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:29,205 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:29,211 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:29,647 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:30,174 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:03:30,175 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:03:30,182 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:03:30,615 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:03:33,613 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:33,614 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:33,615 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:33,616 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:33,650 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:35,618 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:03:37,998 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:37,999 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:38,000 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:38,001 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:38,653 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:38,654 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:03:41,002 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:03:42,694 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:42,695 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:42,696 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:42,701 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:43,128 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:03:43,657 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:45,174 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:03:45,175 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:03:45,184 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:03:46,556 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:03:47,861 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:47,863 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:47,864 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:47,865 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:48,661 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:51,867 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:03:52,187 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:52,189 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:52,189 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:52,190 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:52,664 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:56,606 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:03:56,608 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:03:56,608 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:03:56,613 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:03:56,667 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:03:57,614 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:04:00,176 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:04:00,177 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:04:00,184 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:04:00,969 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:00,971 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:00,972 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:00,972 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:01,670 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:04:02,671 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:04:02,974 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:04:06,433 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:06,435 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:06,435 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:06,436 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:06,673 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:04:08,437 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:04:10,627 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:10,629 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:10,630 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:10,635 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:10,676 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:04:13,132 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:04:14,134 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:04:15,177 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:04:15,178 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:04:15,187 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:04:15,561 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:15,641 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:15,642 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:15,643 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:15,679 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:04:19,645 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:04:20,134 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:20,136 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:20,137 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:20,138 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:20,683 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:04:24,549 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:24,551 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:24,551 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:24,556 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:24,685 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:04:25,558 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:04:25,686 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:04:30,179 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:04:30,180 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:04:30,188 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:04:30,514 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:30,646 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:30,647 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:30,647 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:04:30,648 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:30,689 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:04:34,873 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:34,876 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:34,876 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:34,881 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:35,693 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:04:35,883 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:04:39,863 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:39,865 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:39,866 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:39,867 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:40,697 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:04:41,868 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:04:43,166 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:04:44,506 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:44,508 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:44,509 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:44,510 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:44,700 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:04:45,180 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:04:45,181 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:04:45,188 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:04:47,600 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:04:48,787 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:48,789 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:48,790 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:48,795 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:49,703 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:04:51,705 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:04:52,797 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:04:53,319 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:53,321 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:53,322 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:53,322 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:53,707 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:04:58,325 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:04:58,338 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:04:58,340 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:04:58,340 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:04:58,341 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:04:58,711 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:00,179 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:05:00,181 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:05:00,189 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:05:02,881 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:02,883 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:02,884 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:02,889 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:03,714 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:03,890 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:05:08,328 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:08,330 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:08,331 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:08,332 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:08,718 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:09,333 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:05:12,688 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:12,690 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:12,690 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:12,691 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:12,721 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:13,138 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:05:15,142 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:05:15,181 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:05:15,183 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:05:15,197 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:05:15,724 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:05:17,040 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:17,043 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:17,043 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:17,044 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:17,726 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:21,046 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:05:21,314 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:21,316 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:21,316 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:21,317 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:21,728 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:25,722 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:25,724 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:25,724 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:25,730 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:25,731 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:26,731 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:05:29,939 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:29,940 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:29,941 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:29,942 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:30,179 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:05:30,181 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:05:30,197 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:05:30,735 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:31,966 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:05:34,350 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:34,352 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:34,353 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:34,354 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:34,738 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:35,738 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:05:37,355 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:05:38,858 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:38,860 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:38,860 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:38,865 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:39,741 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:42,867 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:05:43,142 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:05:43,189 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:43,191 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:43,191 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:43,192 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:43,744 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:45,179 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:05:45,181 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:05:45,199 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:05:47,572 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:47,574 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:47,575 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:47,576 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:47,747 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:48,577 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:05:51,873 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:51,875 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:51,876 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:51,881 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:52,751 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:53,882 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:05:56,325 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:05:56,327 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:05:56,328 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:05:56,329 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:05:56,753 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:05:57,754 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:05:59,330 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:06:00,180 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:06:00,181 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:06:00,199 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:06:01,436 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:01,438 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:01,439 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:01,440 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:01,757 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:04,441 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:06:05,859 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:05,861 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:05,861 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:05,866 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:06,761 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:09,868 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:06:10,471 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:10,473 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:10,474 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:10,475 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:10,764 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:13,145 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:06:14,597 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:14,599 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:14,600 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:14,600 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:14,767 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:15,180 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:06:15,182 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:06:15,209 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:06:15,663 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:06:18,912 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:18,914 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:18,915 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:18,916 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:19,770 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:20,917 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:06:21,772 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:06:23,431 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:23,433 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:23,433 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:23,434 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:23,773 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:26,436 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:06:28,001 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:28,003 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:28,003 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:28,004 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:28,777 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:30,180 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:06:30,182 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:06:30,209 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:06:31,633 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:06:32,548 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:32,550 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:32,551 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:32,552 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:32,780 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:37,049 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:37,052 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:37,052 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:37,056 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:06:37,058 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:37,783 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:42,061 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:06:42,078 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:42,080 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:42,080 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:42,081 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:42,787 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:43,147 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:06:43,787 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:06:45,180 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:06:45,181 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:06:45,212 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:06:46,898 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:46,900 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:46,901 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:46,903 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:47,790 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:47,904 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:06:51,699 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:51,701 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:51,701 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:51,702 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:51,793 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:53,704 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:06:56,626 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:06:56,628 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:06:56,629 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:06:56,630 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:06:56,797 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:06:59,636 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:07:00,181 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:07:00,182 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:07:00,213 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:07:00,933 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:00,935 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:00,936 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:00,937 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:01,800 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:04,939 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:07:05,190 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:05,192 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:05,193 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:05,194 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:05,803 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:07,804 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:07:10,138 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:10,140 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:10,141 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:10,144 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:07:10,147 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:10,807 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:13,150 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:07:15,152 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:07:15,181 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:07:15,182 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:07:15,218 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:07:15,587 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:15,633 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:15,634 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:15,635 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:15,810 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:19,973 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:19,974 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:19,975 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:19,976 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:20,814 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:20,977 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:07:24,090 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:24,092 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:24,093 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:24,094 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:24,817 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:26,095 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:07:28,663 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:28,664 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:28,665 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:28,666 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:28,819 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:29,820 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:07:30,181 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:07:30,182 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:07:30,218 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:07:31,604 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:07:33,193 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:33,195 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:33,196 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:33,197 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:33,823 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:37,198 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:07:37,422 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:37,424 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:37,425 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:37,426 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:37,826 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:42,013 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:42,015 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:42,015 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:42,020 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:42,830 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:43,022 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:07:43,153 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:07:45,181 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:07:45,182 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:07:45,220 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:07:46,520 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:46,522 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:46,523 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:46,524 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:46,833 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:48,525 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:07:51,036 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:51,038 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:51,039 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:51,040 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:51,836 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:53,837 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:07:54,041 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:07:55,764 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:07:55,766 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:07:55,766 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:07:55,767 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:07:55,839 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:07:59,769 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:08:00,183 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:08:00,184 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:08:00,222 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:08:00,393 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:00,628 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:00,629 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:00,630 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:00,842 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:08:04,967 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:04,969 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:04,970 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:04,970 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:08:04,972 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:05,846 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:08:09,974 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:08:10,350 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:10,352 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:10,353 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:10,354 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:10,849 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:08:13,217 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:08:15,183 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:08:15,184 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:08:15,223 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:08:15,573 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:16,803 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:16,804 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:16,804 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:08:16,806 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:16,853 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:08:17,854 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:08:20,113 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:20,115 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:20,116 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:20,117 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:20,856 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:08:22,118 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:08:24,332 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:24,334 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:24,334 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:24,335 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:24,859 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:08:27,337 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:08:29,268 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:29,270 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:29,270 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:29,271 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:29,863 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:08:30,184 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:08:30,185 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:08:30,224 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:08:32,569 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:08:33,657 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:33,659 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:33,659 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:33,660 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:33,865 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:08:37,662 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:08:38,236 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:38,238 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:38,238 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:38,239 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:38,871 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:08:39,875 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:08:42,589 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:42,591 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:42,592 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:42,593 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:42,879 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:08:43,160 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:08:43,161 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:08:45,182 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:08:45,183 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:08:45,224 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:08:46,869 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:46,871 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:46,872 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:46,877 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:46,888 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:08:48,878 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:08:51,601 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:51,603 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:51,603 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:51,604 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:51,899 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:08:54,606 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:08:56,001 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:08:56,003 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:08:56,004 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:08:56,005 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:08:56,907 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:09:00,006 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:09:00,185 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:09:00,186 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:09:00,225 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:09:00,529 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:09:00,648 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:09:00,648 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:09:00,650 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:09:00,914 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:09:01,918 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:09:05,019 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:09:05,022 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:09:05,023 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:09:05,023 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:09:05,025 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:09:05,920 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:09:09,899 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:09:09,901 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:09:09,901 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:09:09,902 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:09:09,923 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:09:10,903 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:09:13,164 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:09:14,668 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-25 20:09:14,670 DEBUG   SenderThread:27797 [sender.py:send():379] send: history
+2024-04-25 20:09:14,671 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: summary_record
+2024-04-25 20:09:14,671 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:09:14,927 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:09:15,183 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-25 20:09:15,184 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: stop_status
+2024-04-25 20:09:15,227 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:09:16,559 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:09:19,402 DEBUG   SenderThread:27797 [sender.py:send():379] send: exit
+2024-04-25 20:09:19,403 INFO    SenderThread:27797 [sender.py:send_exit():586] handling exit code: 255
+2024-04-25 20:09:19,404 INFO    SenderThread:27797 [sender.py:send_exit():588] handling runtime: 486
+2024-04-25 20:09:19,409 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:09:19,410 INFO    SenderThread:27797 [sender.py:send_exit():594] send defer
+2024-04-25 20:09:19,411 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:19,411 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-25 20:09:19,412 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:19,412 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-25 20:09:19,412 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 1
+2024-04-25 20:09:19,412 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:19,413 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-25 20:09:19,413 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:19,413 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-25 20:09:19,413 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 2
+2024-04-25 20:09:19,414 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:19,414 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-25 20:09:19,414 INFO    HandlerThread:27797 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-25 20:09:19,415 DEBUG   SystemMonitor:27797 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-25 20:09:19,416 DEBUG   SystemMonitor:27797 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-25 20:09:19,419 INFO    HandlerThread:27797 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-25 20:09:19,420 INFO    HandlerThread:27797 [interfaces.py:finish():202] Joined disk monitor
+2024-04-25 20:09:19,459 INFO    HandlerThread:27797 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-25 20:09:19,459 INFO    HandlerThread:27797 [interfaces.py:finish():202] Joined memory monitor
+2024-04-25 20:09:19,460 INFO    HandlerThread:27797 [interfaces.py:finish():202] Joined network monitor
+2024-04-25 20:09:19,461 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:19,461 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-25 20:09:19,461 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 3
+2024-04-25 20:09:19,461 DEBUG   SenderThread:27797 [sender.py:send():379] send: stats
+2024-04-25 20:09:19,462 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:19,462 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-25 20:09:19,462 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:19,462 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-25 20:09:19,462 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 4
+2024-04-25 20:09:19,463 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:19,463 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-25 20:09:19,463 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:19,463 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-25 20:09:19,463 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 5
+2024-04-25 20:09:19,463 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:19,464 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-25 20:09:19,464 DEBUG   SenderThread:27797 [sender.py:send():379] send: summary
+2024-04-25 20:09:19,465 INFO    SenderThread:27797 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-25 20:09:19,465 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:19,465 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-25 20:09:19,465 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 6
+2024-04-25 20:09:19,465 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:19,465 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-25 20:09:19,466 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:19,466 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-25 20:09:19,466 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 7
+2024-04-25 20:09:19,466 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:09:19,466 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:19,466 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-25 20:09:19,467 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:19,467 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-25 20:09:19,930 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:09:20,403 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-25 20:09:21,304 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 8
+2024-04-25 20:09:21,305 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: poll_exit
+2024-04-25 20:09:21,306 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:21,306 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-25 20:09:21,307 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:21,307 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-25 20:09:21,307 INFO    SenderThread:27797 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-25 20:09:21,310 INFO    SenderThread:27797 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-04-25 20:09:21,372 INFO    SenderThread:27797 [job_builder.py:build():431] adding wandb-job metadata file
+2024-04-25 20:09:21,407 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-25 20:09:21,466 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 9
+2024-04-25 20:09:21,466 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: poll_exit
+2024-04-25 20:09:21,467 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:21,467 DEBUG   SenderThread:27797 [sender.py:send():379] send: artifact
+2024-04-25 20:09:21,468 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-25 20:09:21,932 INFO    Thread-12 :27797 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:09:22,413 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-25 20:09:23,837 INFO    wandb-upload_0:27797 [upload_job.py:push():86] Skipped uploading /root/.local/share/wandb/artifacts/staging/tmp0sc44wvm
+2024-04-25 20:09:25,072 INFO    wandb-upload_1:27797 [upload_job.py:push():89] Uploaded file /tmp/tmp1y5ra26m/wandb-job.json
+2024-04-25 20:09:27,422 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-25 20:09:28,207 INFO    SenderThread:27797 [sender.py:send_artifact():1468] sent artifact job-git_github.com_Dong1C_MMrotate_DCFL_Detection.git_mmrotate-dcfl_tools_train.py - {'id': 'QXJ0aWZhY3Q6ODA5NzY1Mjg2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NjU5NjE0NQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODA5NzUyNjY4', 'versionIndex': 0}}}
+2024-04-25 20:09:28,208 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:28,209 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: status_report
+2024-04-25 20:09:28,209 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-25 20:09:28,210 INFO    SenderThread:27797 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-25 20:09:28,936 INFO    SenderThread:27797 [dir_watcher.py:finish():388] scan: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files
+2024-04-25 20:09:28,937 INFO    SenderThread:27797 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/config.yaml config.yaml
+2024-04-25 20:09:28,937 INFO    SenderThread:27797 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/conda-environment.yaml conda-environment.yaml
+2024-04-25 20:09:28,945 INFO    SenderThread:27797 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-metadata.json wandb-metadata.json
+2024-04-25 20:09:28,946 INFO    SenderThread:27797 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/requirements.txt requirements.txt
+2024-04-25 20:09:28,953 INFO    SenderThread:27797 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/dotav1_dcfl_r50_dfl.py dotav1_dcfl_r50_dfl.py
+2024-04-25 20:09:28,954 INFO    SenderThread:27797 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json wandb-summary.json
+2024-04-25 20:09:28,962 INFO    SenderThread:27797 [dir_watcher.py:finish():402] scan save: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log output.log
+2024-04-25 20:09:28,971 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 10
+2024-04-25 20:09:28,971 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: poll_exit
+2024-04-25 20:09:28,972 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:28,980 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-25 20:09:28,981 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:28,981 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-25 20:09:28,982 INFO    SenderThread:27797 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-25 20:09:29,425 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-25 20:09:29,426 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: poll_exit
+2024-04-25 20:09:29,742 INFO    wandb-upload_1:27797 [upload_job.py:push():131] Uploaded file /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/conda-environment.yaml
+2024-04-25 20:09:30,258 INFO    wandb-upload_2:27797 [upload_job.py:push():131] Uploaded file /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/requirements.txt
+2024-04-25 20:09:30,427 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-25 20:09:30,428 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: poll_exit
+2024-04-25 20:09:30,446 INFO    wandb-upload_4:27797 [upload_job.py:push():131] Uploaded file /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/output.log
+2024-04-25 20:09:30,594 INFO    wandb-upload_0:27797 [upload_job.py:push():131] Uploaded file /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/config.yaml
+2024-04-25 20:09:30,962 INFO    wandb-upload_3:27797 [upload_job.py:push():131] Uploaded file /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/files/wandb-summary.json
+2024-04-25 20:09:31,163 INFO    Thread-11 :27797 [sender.py:transition_state():614] send defer: 11
+2024-04-25 20:09:31,164 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:31,164 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-25 20:09:31,165 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:31,165 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-25 20:09:31,165 INFO    SenderThread:27797 [file_pusher.py:join():178] waiting for file pusher
+2024-04-25 20:09:31,166 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 12
+2024-04-25 20:09:31,166 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:31,167 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-25 20:09:31,167 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:31,167 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-25 20:09:31,168 INFO    SenderThread:27797 [file_stream.py:finish():614] file stream finish called
+2024-04-25 20:09:31,430 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-25 20:09:32,211 INFO    SenderThread:27797 [file_stream.py:finish():618] file stream finish is done
+2024-04-25 20:09:32,212 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 13
+2024-04-25 20:09:32,212 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: poll_exit
+2024-04-25 20:09:32,213 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:32,213 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-25 20:09:32,214 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:32,214 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-25 20:09:32,215 INFO    SenderThread:27797 [sender.py:transition_state():614] send defer: 14
+2024-04-25 20:09:32,215 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: defer
+2024-04-25 20:09:32,216 INFO    HandlerThread:27797 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-25 20:09:32,216 DEBUG   SenderThread:27797 [sender.py:send():379] send: final
+2024-04-25 20:09:32,217 DEBUG   SenderThread:27797 [sender.py:send():379] send: footer
+2024-04-25 20:09:32,217 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: defer
+2024-04-25 20:09:32,217 INFO    SenderThread:27797 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-25 20:09:32,219 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-25 20:09:32,220 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: poll_exit
+2024-04-25 20:09:32,221 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-25 20:09:32,222 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: poll_exit
+2024-04-25 20:09:32,224 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: server_info
+2024-04-25 20:09:32,225 DEBUG   SenderThread:27797 [sender.py:send_request():406] send_request: server_info
+2024-04-25 20:09:32,233 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-25 20:09:32,234 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-25 20:09:32,240 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-25 20:09:32,568 INFO    MainThread:27797 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-25 20:09:32,570 INFO    MainThread:27797 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-25 20:09:32,571 INFO    MainThread:27797 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-04-25 20:09:32,573 DEBUG   HandlerThread:27797 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-25 20:09:32,573 INFO    HandlerThread:27797 [handler.py:finish():866] shutting down handler
+2024-04-25 20:09:33,225 INFO    WriterThread:27797 [datastore.py:close():296] close: /root/Desktop/work/MMLAB/mmrotate-dcfl/wandb/run-20240425_200110-w9cqda26/run-w9cqda26.wandb
+2024-04-25 20:09:33,567 INFO    SenderThread:27797 [sender.py:finish():1546] shutting down sender
+2024-04-25 20:09:33,568 INFO    SenderThread:27797 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-25 20:09:33,568 INFO    SenderThread:27797 [file_pusher.py:join():178] waiting for file pusher

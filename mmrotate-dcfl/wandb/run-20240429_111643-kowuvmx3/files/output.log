@@ -1,0 +1,42 @@
+Traceback (most recent call last):
+  File "tools/train.py", line 192, in <module>
+    main()
+  File "tools/train.py", line 181, in main
+    train_detector(
+  File "/root/Desktop/work/MMLAB/mmrotate-dcfl/mmrotate/apis/train.py", line 141, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/root/Desktop/work/MMLAB/MMCV-DCFL/mmcv/runner/epoch_based_runner.py", line 136, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/root/Desktop/work/MMLAB/MMCV-DCFL/mmcv/runner/epoch_based_runner.py", line 53, in train
+    self.run_iter(data_batch, train_mode=True, **kwargs)
+  File "/root/Desktop/work/MMLAB/MMCV-DCFL/mmcv/runner/epoch_based_runner.py", line 31, in run_iter
+    outputs = self.model.train_step(data_batch, self.optimizer,
+  File "/root/Desktop/work/MMLAB/MMCV-DCFL/mmcv/parallel/data_parallel.py", line 77, in train_step
+    return self.module.train_step(*inputs[0], **kwargs[0])
+  File "/root/Desktop/work/MMLAB/mmdetection-2.28.0/mmdet/models/detectors/base.py", line 248, in train_step
+    losses = self(**data)
+  File "/root/miniconda3/envs/openmmlab/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/Desktop/work/MMLAB/MMCV-DCFL/mmcv/runner/fp16_utils.py", line 116, in new_func
+    return old_func(*args, **kwargs)
+  File "/root/Desktop/work/MMLAB/mmdetection-2.28.0/mmdet/models/detectors/base.py", line 172, in forward
+    return self.forward_train(img, img_metas, **kwargs)
+  File "/root/Desktop/work/MMLAB/mmrotate-dcfl/mmrotate/models/detectors/single_stage.py", line 81, in forward_train
+    losses = self.bbox_head.forward_train(x, img_metas, gt_bboxes,
+  File "/root/Desktop/work/MMLAB/mmdetection-2.28.0/mmdet/models/dense_heads/base_dense_head.py", line 330, in forward_train
+    outs = self(x)
+  File "/root/miniconda3/envs/openmmlab/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/Desktop/work/MMLAB/mmrotate-dcfl/mmrotate/models/dense_heads/rotated_anchor_head.py", line 150, in forward
+    return multi_apply(self.forward_single, feats)
+  File "/root/Desktop/work/MMLAB/mmdetection-2.28.0/mmdet/core/utils/misc.py", line 30, in multi_apply
+    return tuple(map(list, zip(*map_results)))
+  File "/root/Desktop/work/MMLAB/mmrotate-dcfl/mmrotate/models/dense_heads/r_dcfl_head.py", line 203, in forward_single
+    cls_feat = self.cls_convs[self.stacked_convs - 2](cls_feat, sampling_loc)
+  File "/root/miniconda3/envs/openmmlab/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/Desktop/work/MMLAB/MMCV-DCFL/mmcv/ops/deform_conv.py", line 307, in forward
+    out = deform_conv2d(x, offset, self.weight, self.stride, self.padding,
+  File "/root/Desktop/work/MMLAB/MMCV-DCFL/mmcv/ops/deform_conv.py", line 92, in forward
+    ext_module.deform_conv_forward(
+RuntimeError: CUDA out of memory. Tried to allocate 1.38 GiB (GPU 0; 10.75 GiB total capacity; 7.47 GiB already allocated; 1.30 GiB free; 8.46 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
