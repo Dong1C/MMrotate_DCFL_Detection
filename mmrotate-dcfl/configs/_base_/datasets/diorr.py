@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'DIORDataset'
-data_root = '/root/Desktop/bypy/DIOR/'
+data_root = 'data/DIOR/'
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 train_pipeline = [
@@ -32,7 +32,7 @@ data = dict(
     workers_per_gpu=2,
     train=dict(
         type=dataset_type,
-        ann_file=data_root + 'ImageSets/Main/trainval.txt',
+        ann_file=data_root + 'ImageSets/Main/train.txt',
         ann_subdir=data_root + 'Annotations/OBB/',
         img_subdir=data_root + 'JPEGImages-trainval/',
         img_prefix=data_root + 'JPEGImages-trainval/',
