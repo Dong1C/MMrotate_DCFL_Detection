@@ -1,3 +1,0 @@
-imagecorruptions
-scipy
-sklearn

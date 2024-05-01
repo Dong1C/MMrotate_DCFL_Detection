@@ -1,1 +1,0 @@
-/root/Desktop/work/MMLAB/mmrotate-dcfl/work_dirs/oriented_rcnn_r50_fpn_1x_dota_le90_customized/oriented_rcnn_r50_fpn_1x_dota_le90_customized.py
