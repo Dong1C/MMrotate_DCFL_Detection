@@ -17,10 +17,15 @@
   ```
 
 ## 2. follow the guide in the MMCV-DCFL to build mmcv
+Check this repos(mainly addition about the deformable-conv and some other important modules)
+https://github.com/Chasel-Tsui/MMCV-DCFL.git
+
 
 ## 3. follow the guide in mmdetection to build mmdet
-
+*better version 2.**
 
 ## 4. follow the guide in mmrotate-dcfl to build mmrotate
+just run the build
 
 ## 5. work in the mmrotate-dcfl directory
+this is my work routine
