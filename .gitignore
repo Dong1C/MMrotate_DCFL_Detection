@@ -8,7 +8,7 @@ data/
 checkpoints/
 
 # MMCV-DCFL cython
-MMCV-DCFL/build/
+MMCV-DCFL
 
 # jupyter notebook
 .ipynb_checkpoints
