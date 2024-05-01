@@ -1,7 +1,7 @@
 _base_ = [
     '../_base_/datasets/dotav1.py', 
     '../_base_/schedules/schedule_customized.py',
-    '../_base_/default_runtime.py'
+    '../_base_/runtime_wandb.py'
 ]
 
 angle_version = 'le135'
@@ -103,4 +103,4 @@ data = dict(
     test=dict(version=angle_version))
 optimizer = dict(type='SGD', lr=0.0025, momentum=0.9, weight_decay=0.0001)
 checkpoint_config = dict(interval=4)
-evaluation = dict(interval=1, metric='mAP')
+evaluation = dict(interval=6, metric='mAP')
