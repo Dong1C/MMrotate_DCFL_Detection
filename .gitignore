@@ -1,0 +1,17 @@
+# All work_dirs
+work_dirs/
+
+# Data files
+data/
+
+# Checkpoints
+checkpoints/
+
+# MMCV-DCFL cython
+MMCV-DCFL/build/
+
+# jupyter notebook
+.ipynb_checkpoints
+
+# the wandb file
+wandb
