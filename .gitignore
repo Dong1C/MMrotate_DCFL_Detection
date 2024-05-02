@@ -15,3 +15,6 @@ MMCV-DCFL
 
 # the wandb file
 wandb
+
+# the .vscode file 
+.vscode
