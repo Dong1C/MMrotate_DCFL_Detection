@@ -1,13 +1,13 @@
 _base_ = [
     '../_base_/datasets/dotav1.py', 
     '../_base_/schedules/schedule_customized.py',
-    '../_base_/runtime_wandb.py'
+    '../_base_/runtime_attention.py'
 ]
 
 
 angle_version = 'le135'
 model = dict(
-    type='',
+    type='RotatedRetinaNet',
     backbone=dict(
         type='ResNetWithCoordAttention',
         depth=50,
