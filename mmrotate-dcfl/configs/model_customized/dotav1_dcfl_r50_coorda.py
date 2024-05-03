@@ -4,11 +4,12 @@ _base_ = [
     '../_base_/runtime_wandb.py'
 ]
 
+
 angle_version = 'le135'
 model = dict(
-    type='RotatedRetinaNet',
+    type='',
     backbone=dict(
-        type='ResNet',
+        type='ResNetWithCoordAttention',
         depth=50,
         num_stages=4,
         out_indices=(0, 1, 2, 3),

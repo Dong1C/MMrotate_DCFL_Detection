@@ -1,10 +1,10 @@
 import torch
 from mmdet.models.backbones import ResNet
-from cv_lib.attention.CoordAttention import CoordAtt
-from cv_lib.attention.SEAttention import SEAttention
+from ..cv_lib.attention.CoordAttention import CoordAtt
+from ..cv_lib.attention.SEAttention import SEAttention
 from mmdet.models.builder import BACKBONES
  
- 
+
 class ResNetWithAttention(ResNet):
     def __init__(self , **kwargs):
         super(ResNetWithAttention, self).__init__(**kwargs)
