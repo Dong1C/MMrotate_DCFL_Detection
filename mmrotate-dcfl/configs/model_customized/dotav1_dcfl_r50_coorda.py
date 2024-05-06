@@ -1,6 +1,6 @@
 _base_ = [
     '../_base_/datasets/dotav1.py', 
-    '../_base_/schedules/schedule_1x.py',
+    '../_base_/schedules/schedule_24e.py',
     '../_base_/runtime_attention.py'
 ]
 
