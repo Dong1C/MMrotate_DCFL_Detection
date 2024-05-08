@@ -1,6 +1,6 @@
 _base_ = [
     '../_base_/datasets/dotav1.py', 
-    '../_base_/schedules/schedule_24e.py',
+    '../_base_/schedules/schedule_40e.py',
     '../_base_/runtime_attention.py'
 ]
 
@@ -76,7 +76,7 @@ model = dict(
     test_cfg=dict(
         nms_pre=2000,
         min_bbox_size=0,
-        score_thr=0.05, 
+        score_thr=0.08, 
         nms=dict(iou_thr=0.4), 
         max_per_img=2000))
 
