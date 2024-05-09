@@ -17,6 +17,7 @@ from .ssd_vgg import SSDVGG
 from .swin import SwinTransformer
 from .trident_resnet import TridentResNet
 from .ResNetswithAttention import ResNetWithCoordAttention, ResNetWithSEAttention
+from .ResNeXtswithAttention import ResNeXtWithCoordAttention, ResNeXtWithSEAttention
 
 __all__ = [
     'RegNet', 'ResNet', 'ResNetV1d', 'ResNeXt', 'SSDVGG', 'HRNet',
@@ -24,5 +25,6 @@ __all__ = [
     'DetectoRS_ResNeXt', 'Darknet', 'ResNeSt', 'TridentResNet', 'CSPDarknet',
     'SwinTransformer', 'PyramidVisionTransformer',
     'PyramidVisionTransformerV2', 'EfficientNet', 
-    'ResNetWithCoordAttention', 'ResNetWithSEAttention'
+    'ResNetWithCoordAttention', 'ResNetWithSEAttention',
+    'ResNeXtWithCoordAttention', 'ResNeXtWithSEAttention'
 ]
